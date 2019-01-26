@@ -96,22 +96,25 @@ Take Piccadilly Line to South Kensington
 Take Piccadilly Line to South Kensington
 Take District Line to Mile End                        # Store in Mile End
 Take District Line to Hammersmith                     # Get stored 1 from Hammersmith
+Take District Line to Upminster                       # Store 1 in Upminster for later
+Take District Line to Hammersmith                     # Get stored 1 from Hammersmith
 Take District Line to Mile End                        # Get right substring with offset 1 ("Heathrow Terminal 4" -> "4")
 Take Central Line to Bank                             # Store "4" in Bank
 Take District Line to Hammersmith
 Take District Line to Parsons Green                   # Parse "4" to 4
-Take District Line to Mile End                        # Bring 4 to Mile End
+Take District Line to Upminster                       # Stored 1 + 4 = 5
+Take District Line to Mile End                        # Bring 5 to Mile End
 Take District Line to Hammersmith
-Take Piccadilly Line to Heathrow Terminals 1, 2, 3    # Get "Heathrow Terminals 1, 2, 3"
+Take Piccadilly Line to Heathrow Terminals 2 & 3      # Get "Heathrow Terminals 2 & 3"
 Take Piccadilly Line to South Kensington
 Take District Line to South Kensington
-Take District Line to Mile End                        # Get right substring with offset 4 ("Heathrow Terminals 1, 2, 3" -> "2, 3")
-Take District Line to Gunnersbury                     # Put "2, 3" into Gunnersbury
+Take District Line to Mile End                        # Get right substring with offset 5 ("Heathrow Terminals 2 & 3" -> "2 & 3")
+Take District Line to Gunnersbury                     # Put "2 & 3" into Gunnersbury
 Take District Line to Hammersmith
 Take Piccadilly Line to Heathrow Terminal 4           # Get 1 back from Heathrow Terminal 4
 Take Piccadilly Line to Earl's Court
 Take Piccadilly Line to Earl's Court
-Take District Line to Gunnersbury                     # Get left substring with offset 1 ("2, 3" -> "2", station value is now 1)
+Take District Line to Gunnersbury                     # Get left substring with offset 1 ("2 & 3" -> "2", station value is now 1)
 Take District Line to Acton Town                      # Put "2" into Acton Town
 Take District Line to Hammersmith                     # Get "4" from Hammersmith
 Take District Line to Paddington                      # Put "4" into Paddington
